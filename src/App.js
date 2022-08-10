@@ -48,7 +48,9 @@ export default function App() {
 
   return (
     <div>
+      <h1>Countdown</h1>
       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+      <p>You keep checking in Im going to mess with the css. or maybe ask for help</p>
     </div>
   );
 }
