@@ -46,6 +46,7 @@ export default function Timer(props) {
 
   return (
     <li className="list__item">
+      <h2>{props.title}</h2>
       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
     </li>
   );
