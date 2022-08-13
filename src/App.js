@@ -8,7 +8,7 @@ export default function App() {
         <Timer title="Portfolio Project" date={"8/31/"} />
         <Timer title="Volunteering Hours" date={"9/16/"} />
       </ul>
-      <p>You keep checking in Im going to mess with the css. or maybe ask for help :D </p>
+      <p>You're a nerd. :D </p>
     </>
   );
 }
