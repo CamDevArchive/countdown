@@ -4,17 +4,20 @@ const calculateTimeLeft = (targetDate = "9/23/") => {
   let year = new Date().getFullYear();
   let difference = +new Date(targetDate + year) - +new Date();
   let timeLeft = {};
-
+console.log(difference);
   if (difference > 0) {
     timeLeft = {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      weeks: Math.floor(difference / (1000 * 60 * 60 * 24 * 7)),
+      days: Math.floor(difference / (1000 * 60 * 60 * 24) % 7),
       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
       minutes: Math.floor((difference / 1000 / 60) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
   }
 
-  return timeLeft;
+  // ms => s => min => h => d => w
+
+  return (timeLeft);
 };
 
 export default function Timer(props) {
@@ -40,6 +43,7 @@ export default function Timer(props) {
     timerComponents.push(
       <span key={interval} className={interval}>
         {timeLeft[interval]} {interval}{" "}
+        {}
       </span>
     );
   });
