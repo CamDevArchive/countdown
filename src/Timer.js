@@ -4,7 +4,6 @@ const calculateTimeLeft = (targetDate = "9/23/") => {
   let year = new Date().getFullYear();
   let difference = +new Date(targetDate + year) - +new Date();
   let timeLeft = {};
-console.log(difference);
   if (difference > 0) {
     timeLeft = {
       weeks: Math.floor(difference / (1000 * 60 * 60 * 24 * 7)),
@@ -43,7 +42,6 @@ export default function Timer(props) {
     timerComponents.push(
       <span key={interval} className={interval}>
         {timeLeft[interval]} {interval}{" "}
-        {}
       </span>
     );
   });
@@ -52,6 +50,7 @@ export default function Timer(props) {
     <li className="list__item">
       <h2>{props.title}</h2>
       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+      <p>{`Target Date: ${props.date}${new Date().getFullYear()}`} </p>
     </li>
   );
 }
