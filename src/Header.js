@@ -52,7 +52,7 @@ export default function Header() {
     return (
         <header className="header">
             <h1 className="header__title">Countdown</h1>
-            <p className="header__counter">Week {Math.abs(countWeeks)}</p>
+            <p className="header__counter">Week {Math.abs(countWeeks) + 1}</p>
             <p className="header__quote">{quote}</p>
         </header>
     );
