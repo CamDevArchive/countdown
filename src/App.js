@@ -1,9 +1,11 @@
 import Timer from './Timer';
+import Header from './Header';
+
 export default function App() {
   return (
     <>
-      <h1>Countdown</h1>
-      <ul>
+      <Header />
+      <ul className='timerList'>
         <Timer title="Graduation Day" date={"9/23/"} />
         <Timer title="Portfolio Project" date={"8/31/"} />
         <Timer title="Volunteering Hours" date={"9/16/"} />

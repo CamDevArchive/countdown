@@ -47,10 +47,11 @@ export default function Timer(props) {
   });
 
   return (
-    <li className="list__item">
-      <h2>{props.title}</h2>
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
-      <p>{`Target Date: ${props.date}${new Date().getFullYear()}`} </p>
+    <li className="timerList__timerItem">
+      <h2 className="timerItem__title">{props.title}</h2>
+      {timerComponents.length ? timerComponents : <span className="">Time's up!</span>}
+      <p className="timerItem__target">{`Target Date: ${props.date}${new Date().getFullYear()}`} </p>
     </li>
   );
 }
+
