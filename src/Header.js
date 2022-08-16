@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+// copywrite symbol
+const copywrite = "©";
 
 function calcuateProgramWeek() {
     let year = new Date().getFullYear();
@@ -17,8 +19,10 @@ const quotes = [
     "Try not to get hit by a bus",
     "Try Minecraft",
     "Im not like other people, im literally a program" ,
-    "Something funny - Jules"
+    "Something funny - Jalynn",
+    "That's my tech partner y'all!" + copywrite,
 ]
+
 
 
 const getRandomQuote = () => {
