@@ -21,6 +21,7 @@ const quotes = [
     "Im not like other people, im literally a program" ,
     "Something funny - Jalynn",
     "That's my tech partner y'all!" + copywrite,
+    "🐢",
 ]
 
 
