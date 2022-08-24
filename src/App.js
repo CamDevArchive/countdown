@@ -1,5 +1,6 @@
 import Timer from './Timer';
 import Header from './Header';
+import "./styles/main.css";
 
 export default function App() {
   return (

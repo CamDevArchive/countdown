@@ -1,0 +1,31 @@
+#root { margin: 0 auto; width: 800px;}
+h1.header__title { font-size: 3rem; }
+h1.header__title:before { content: "R2H "; }
+p.header__counter {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+p.header__quote { 
+  font-size: 1.2rem;
+  margin-left: 20px;
+  font-style: italic;
+  margin-top: 0;
+}
+ul.timerList {
+  list-style: none;
+}
+ul.timerList > li {
+  border: 1px solid #ccc;
+  border-left: 4px solid #3ce23f;
+  font-size: 1rem;
+  padding: 0 10px 0 20px;
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  box-shadow: 3px 5px 10px #ccc;
+}
+ul.timerList > li:nth-child(1) {
+  border-left: 4px solid #c3e23f;
+}
+ul.timerList > li:nth-child(2) {
+  border-left: 14px solid #03523f;
+}
