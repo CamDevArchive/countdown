@@ -16,6 +16,7 @@ const quotes = [
     "Youre either blue or not blue",
     "AHHHHHHHHHHHHHHHH", 
     "Black Air Force Energy 🤔",
+    "I just wanna talk.... on the basketball court. - Sammie",
     "Try not to get hit by a bus",
     "Try Minecraft",
     "Im not like other people, im literally a program" ,
@@ -23,6 +24,7 @@ const quotes = [
     "That's my tech partner y'all!" + copywrite,
     "Now with ants! 🐜",   
     "🐢",
+    ""
 ]
 
 
