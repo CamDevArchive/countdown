@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-const calculateTimeLeft = (targetDate = "9/23/") => {
+const calculateTimeLeft = (targetDate = "9/23/", time = "12:00:00") => {
   let year = new Date().getFullYear();
-  let difference = +new Date(targetDate + year) - +new Date();
+  let difference = +new Date(`${targetDate}, ${year} ${time}`) - +new Date();
   let timeLeft = {};
   if (difference > 0) {
     timeLeft = {
@@ -20,12 +20,12 @@ const calculateTimeLeft = (targetDate = "9/23/") => {
 };
 
 export default function Timer(props) {
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(props.date));
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(props.date, props.time));
 
   
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft(props.date));
+      setTimeLeft(calculateTimeLeft(props.date , props.time));
     }, 1000);
     return () => clearTimeout(timer);
   });

@@ -24,7 +24,7 @@ const quotes = [
     "That's my tech partner y'all!" + copywrite,
     "Now with ants! 🐜",   
     "🐢",
-    ""
+    "C104L"
 ]
 
 
@@ -60,7 +60,7 @@ export default function Header() {
     return (
         <header className="header">
             <h1 className="header__title">Countdown</h1>
-            <p className="header__counter">Week {Math.abs(countWeeks) + 1}</p>
+            <p className="header__counter">Week {Math.abs(countWeeks) + 1} Free at last </p>
             <p className="header__quote">{quote}</p>
         </header>
     );

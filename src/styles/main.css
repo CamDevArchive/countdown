@@ -1,11 +1,33 @@
-#root { margin: 0 auto; width: 800px;}
-h1.header__title { font-size: 3rem; }
-h1.header__title:before { content: "R2H "; }
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  margin: 0 auto;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+h1.header__title {
+  font-size: 3rem;
+}
+h1.header__title:before {
+  content: "R2H ";
+}
 p.header__counter {
   font-size: 2rem;
   margin-bottom: 10px;
 }
-p.header__quote { 
+p.header__quote {
   font-size: 1.2rem;
   margin-left: 20px;
   font-style: italic;
@@ -28,4 +50,17 @@ ul.timerList > li:nth-child(1) {
 }
 ul.timerList > li:nth-child(2) {
   border-left: 14px solid #03523f;
+}
+
+
+button { 
+  background: #6b3db8;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 3px 5px 10px #ccc;
 }
